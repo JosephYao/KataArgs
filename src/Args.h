@@ -1,11 +1,15 @@
 #ifndef ARGS__H
 #define ARGS__H
 #include <string>
+#include <set>
 class Args
 {
 public:
+	void addBooleanArgument(char option);
 	int getIntValue(char option) const;
-	static const int DEFAULT_INT_VALUE;
+	bool getBooleanValue(char option) const;
+private:
+	std::set<char> booleanArgumentOptions_;
 };
 
 #endif
