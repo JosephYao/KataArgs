@@ -1,6 +1,6 @@
 #include "Args.h"
-#include "ArgsParserSchema.h"
+#include "ArgsParser.h"
 
 int Args::getIntValue(char option) const {
-	return ArgsParserSchema::DEFAULT_INT_VALUE;
+	return ArgsParser::DEFAULT_INT_VALUE;
 }

@@ -3,7 +3,9 @@
 #include "ArgsParserExpection.h"
 #include "stddef.h"
 
-ArgsParser::ArgsParser(ArgsParserSchema& schema) {
+const int ArgsParser::DEFAULT_INT_VALUE = 0;
+
+void ArgsParser::addIntOption(char option) {
 
 }
 

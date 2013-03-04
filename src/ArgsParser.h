@@ -6,8 +6,10 @@ class Args;
 class ArgsParser
 {
 public:
-	ArgsParser(ArgsParserSchema& schema);
+	void addIntOption(char option);
 	Args * parse(const char * argv[], int argc) const;
+
+	static const int DEFAULT_INT_VALUE;
 };
 
 #endif
